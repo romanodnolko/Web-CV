@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="header-nav">
+        <div class="logo">Roman Odnolko</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">Über mich</a></li>
+            <li><a href="#experience">Erfahrung</a></li>
+            <li><a href="#projects">Projecte</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Roman Odnolko</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">Über mich</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Erfahrung</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projecte</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+          </div>
+        </div>
+      </nav>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/f5.png"  alt="Roman Odnolko profile picture" />
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hallo, Ich bin</p>
+                <h1 class="title">Roman Odnolko</h1>
+                <p class="section__text__p2">Frontend Entwickler</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2"
+                     onclick="window.open('./assets/Odnolko-Roman CV.pdf')">
+                    Download CV</button>
+                    <button class="btn btn-color-1"
+                     onclick="location.href='./#contact'">Kontakt Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img 
+                    src="./assets/linkedin.png" 
+                    alt="My Linkedin profile"
+                    class="icon" 
+                    onclick="location.href='https://www.linkedin.com/in/roman-odnolko-b31693260/'"/>
+                    <img 
+                    src="./assets/github.png" 
+                    alt="My GitHub profile"
+                    class="icon" 
+                    onclick="location.href='https://github.com/romanodnolko/Web-CV.git'"/>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Erfahren Sie mehr</p>
+            <h1 class="title">Über mich</h1>
+            <div class="section-container">
+              <div class="section__pic-container">
+                <img
+                  src="./assets/f1.jpg"
+                  alt="Profile picture"
+                  class="about-pic"
+                />
+              </div>
+              <div class="about-details-container">
+                <div class="about-containers">
+                  <div class="details-container">
+                    <img
+                      src="./assets/awareness.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <h3>Erfahrung</h3>
+                    <p>2 Jahre Arbeit in 3D-Programmen<br/>
+                        halbjährliche Erfahrung in der Full-Stack-Entwicklung</p>
+                  </div>
+                  <div class="details-container">
+                    <img
+                      src="./assets/certficate.png"
+                      alt="Education icon"
+                      class="icon"
+                    />
+                    <h3>Ausbildung</h3>
+                    <p>Bachelor-Abschluss<br/> 
+                        als Bau- und Architekturingenieur </p>
+                  </div>
+                </div>
+                <div class="text-container">
+                  <p>
+                    <span>"Challenges are what make life interesting and overcoming them is what makes life meaningful,"- 
+                      ist meine Lebensphilosophie.</span> <br/>
+Ich nutzte meine eigene Kreativität und meine Kompetenz,
+Obwohl ich gerne im Team arbeite und originell bei der Lösung von Problemen bin.
+Ich würde gerne eine konstruktive, effiziente Besprechung mit meinen Kollegen führen.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img
+              src="./assets/down-arrow.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#experience'"
+            />
+        </section>
+        <section id="experience">
+            <p class="section__text__p1">Entdecken Sie meine</p>
+            <h1 class="title">Erfahrung</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Web Entwickler</h2>
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                    src="./assets/like.png"
+                                    alt="done icon" class="icon"/>
+                                <div>
+                                    <h3>HTML</h3>            
+                                </div>    
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/like.png"
+                                    alt="done icon" class="icon"/>
+                                <div>
+                                    <h3>CSS</h3>            
+                                </div>    
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/like.png"
+                                    alt="done icon" class="icon"/>
+                                <div>
+                                    <h3>Python</h3>            
+                                </div>    
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/like.png"
+                                    alt="done icon" class="icon"/>
+                                <div>
+                                    <h3>UI</h3>            
+                                </div>    
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/like.png"
+                                    alt="done icon" class="icon"/>
+                                <div>
+                                    <h3>JavaScript</h3>            
+                                </div>    
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ranger">
+          
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                       
+          <div class="slider-box">
+            <div class="slider fade">
+              <div class="numIndicator">1 / 5</div>
+              <img src="./assets/7.png" style="width:100%" alt="ImageSlide1">
+              
+            </div>
+            <div class="slider fade">
+              <div class="numIndicator">2 / 5</div>
+              <img src="./assets/8.png" style="width:100%" alt="ImageSlide2">
+              
+            </div>
+            <div class="slider fade">
+              <div class="numIndicator">3 / 5</div>
+              <img src="./assets/9.png" style="width:100%" alt="ImageSlide3">
+              
+            </div>
+            <div class="slider fade">
+              <div class="numIndicator">4 / 5</div>
+              <img src="./assets/10.png" style="width:100%" alt="ImageSlide4">
+              
+            </div>
+            <div class="slider fade">
+              <div class="numIndicator">5 / 5</div>
+              <img src="./assets/11new.png" style="width:100%" alt="ImageSlide5">
+              
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <img
+            src="./assets/down-arrow.png"
+            alt="Arrow icon"
+            class="icon arrow arrow-erfahrung"
+            onclick="location.href='./#projects'"/>
+        </section>
+        <section id="projects">
+          <p class="section__text__p1">Durchsuchen Sie meine neuesten</p>
+          <h1 class="title">Projecte</h1>
+          <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/hangman2.jpg"
+                    height="160"
+                    width="300"
+                    alt="Project 1"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Python's Project One</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://replit.com/@RomanOdnolko/Hangman-Roman-Odnolko?v=1'"
+                  >
+                    Replit
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/blackjack.jpg"
+                    height="160"
+                    width="300"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Python's Project Two</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://replit.com/@RomanOdnolko/blackjack-Roman-Odnolko?v=1'"
+                  >
+                  Replit
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/higher.png"
+                    height="160"
+                    width="300"
+                    alt="Project 3"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Python's Project Three</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://replit.com/@RomanOdnolko/higher-lower-Roman-Odnolko?v=1'"
+                  >
+                  Replit
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assets/quiz.png"
+                    height="160"
+                    width="300"
+                    alt="Project 4"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Python's Project Four</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://replit.com/@RomanOdnolko/quiz-game-Roman-Odnolko?v=1'"
+                  >
+                  Replit
+                  </button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assets/down-arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#contact'"/>
+        </section>
+        <section id="contact">
+          <p class="section__text__p1 kontakt-form">In Kontakt kommen</p>
+          <h1 class="title">Kontakt</h1>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img 
+              src="./assets/email.png "
+              alt="mail icon"
+              class="icon contact-icon"/>
+              <p><a href="mailto:romanodnolko01@gmail.com">romanodnolko01@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img 
+              src="./assets/linkedin.png "
+              alt="linkedin icon"
+              class="icon contact-icon"/>
+              <p><a href="https://www.linkedin.com/in/roman-odnolko-b31693260">LinkedIn</a></p>
+            </div>
+          </div>
+
+        </section>
+        <footer>
+          <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#experience">Erfahrung</a></li>
+                <li><a href="#projects">Projecte</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+              </ul>
+            </div>
+          </nav>
+          <p>Copyright &#169 2023 Roman Odnolko. All Rights Reserved</p>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
