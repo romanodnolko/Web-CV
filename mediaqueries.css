@@ -57,6 +57,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
     }
     #experience{
         margin-bottom: 0;
@@ -84,6 +85,8 @@
     }
     .about-containers, .contact-info-upper-container, .btn-container {
         flex-wrap:wrap ;
+        height: fit-content;
+        margin-top: 1rem;
     }
     .contact-info-container {
         margin: 0;
@@ -93,13 +96,16 @@
     }
     .experience-sub-title {
         font-size: 1.25rem;
+        
     }
     #experience {
         height: fit-content;
     }
+   
     .logo {
         font-size: 1.5rem;
     }
+    
     .nav-links {
         flex-direction: column;
         gap: 0.5rem;
